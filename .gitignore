@@ -1,0 +1,6 @@
+.DS_Store
+.env
+application/target/
+docker-compose.yml
+application/system/src/database/postgres/migration/target
+application/system/src/email/gmail/credentials/*.json

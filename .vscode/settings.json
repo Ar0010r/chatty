@@ -1,0 +1,9 @@
+{
+    "rust-analyzer.checkOnSave": true,
+    "rust-analyzer.diagnostics.disabled": [
+        "needless_return"
+    ],
+    "rust-analyzer.linkedProjects": [
+        "/app/application/Cargo.toml"
+    ],
+}

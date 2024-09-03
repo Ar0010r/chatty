@@ -1,0 +1,16 @@
+[package]
+name = "business"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+domain = { path = "../domain" }
+system = { path = "../system" }
+
+chrono = "0.4.19"
+axum = {version = "0.7.5", features = ["macros", "multipart"] }
+tokio = { version = "1.0.0", features = ["rt", "rt-multi-thread", "macros"] }
+tokio-shared-rt = "0.1.0"
+fake = {version = "2.9.2", features = ["derive", "chrono"] }
+sea-orm = { version = "1.0.0", features = [ "sqlx-postgres", "runtime-tokio-native-tls", "macros", "with-chrono", "debug-print", "postgres-array" ] }
+serde = { version = "1.0.130", features = ["derive"] }

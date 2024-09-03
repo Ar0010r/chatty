@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  root:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /path/to/folder/mail_handler:/app
+    ports:
+      - "3000:3000"

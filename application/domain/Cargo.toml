@@ -1,0 +1,13 @@
+[package]
+name = "domain"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+system = { path = "../system" }
+chrono = "0.4.19"
+fake = {version = "2.9.2", features = ["derive", "chrono"] }
+serde = { version = "1.0.130", features = ["derive"] }
+validator = { version = "0.18.1", features = ["derive"] }
+factory = "0.1.2"
+sea-orm = { version = "1.0.0", features = [ "sqlx-postgres", "runtime-tokio-native-tls", "macros", "with-chrono", "debug-print", "postgres-array" ] }
